@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.herosection {
+    height: 100vh;
+    width: 100%;
+    content: "";
+    background-image: url("./public/BackImage.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--color-secondary);
+}
+
+.text-heads {
+    font-family: var(--font-primary-ascent);
+    position: relative;
+    padding: 10vmax;
+    width: 70%;
+}
+
+.text-heads h3 {
+    font-size: 2vmax;
+    text-transform: uppercase;
+
+}
+
+.text-heads h1 {
+    font-size: 4vmax;
+}
+
+.text-heads h1 span {
+    color: var(--color-primary-light);
+}
+
+.text-heads p {
+    font-size: 1.5vmax;
+}
+
+@media (max-width: 520px) {
+    .text-heads {
+        padding: 5vmax;
+        width: 70%;
+    }
+}
+
+@media (max-width: 420px) {
+    .text-heads {
+        padding: 3vmax;
+        width: 60%;
+    }
+
+    .text-heads h1 {
+        font-size: 3.5vmax;
+    }
+
+    .text-heads p {
+        font-size: 1.2vmax;
+    }
+
+}

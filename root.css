@@ -1,0 +1,56 @@
+:root {
+    /* Brand Colors */
+    --color-primary: #0b36a8;
+    --color-primary-dark: #08297f;
+    --color-primary-light: #3c61d6;
+
+    /* Neutral Colors */
+    --color-secondary: #ffffff;
+    --color-dark: #000000;
+    --color-gray-100: #f5f5f5;
+    --color-gray-200: #e5e5e5;
+    --color-gray-300: #d4d4d4;
+    --color-gray-500: #8a8a8a;
+    --color-gray-700: #4a4a4a;
+
+    /* Status Colors */
+    --color-success: #2ecc71;
+    --color-warning: #f1c40f;
+    --color-danger: #e74c3c;
+    --color-info: #2980b9;
+
+    /* Typography */
+    --font-primary: "Poppins", sans-serif;
+    --font-primary-ascent: "ubuntu", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 2.25rem;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 40px;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-xl: 30px;
+    --radius-round: 50%;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.18);
+
+    /* Animation / Transitions */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-medium: 0.35s ease;
+    --transition-slow: 0.6s ease;
+}

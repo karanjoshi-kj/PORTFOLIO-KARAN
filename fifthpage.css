@@ -1,0 +1,247 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f6f8;
+}
+
+/* ===== SECTION ===== */
+.fifthpage {
+  width: 100%;
+  padding: 100px 8%;
+}
+
+/* ===== TITLE AREA ===== */
+.recentWORKS {
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.recentWORKS h1 {
+  font-size: 90px;
+  color: rgba(0, 0, 0, 0.08);
+  font-weight: 800;
+}
+
+.recentWORKS h2 {
+  font-size: 48px;
+  color: #2980b9;
+  font-weight: 700;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.recentWORKS p {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===== WORK GRID ===== */
+.myworks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* ===== CARD ===== */
+.work1 {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.work1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== IMAGE ===== */
+.work1 img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== CONTENT ===== */
+.work-content {
+  padding: 25px;
+}
+
+.work-content h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+.work-content h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.work-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+/* ===== BUTTON ===== */
+.work-content button {
+  width: 100%;
+  padding: 14px;
+  background: transparent;
+  border: 2px solid #2980b9;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.work-content button a {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.work-content button i {
+  margin-left: 6px;
+  color: #2980b9;
+  transition: transform 0.3s ease;
+}
+
+.work-content button:hover {
+  background: #2980b9;
+}
+
+.work-content button:hover a,
+.work-content button:hover i {
+  color: #fff;
+}
+
+.work-content button:hover i {
+  transform: translateX(6px);
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .myworks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .recentWORKS h1 {
+    font-size: 70px;
+  }
+
+  .recentWORKS h2 {
+    font-size: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .fifthpage {
+    padding: 80px 6%;
+  }
+
+  .myworks {
+    grid-template-columns: 1fr;
+  }
+
+  .recentWORKS h1 {
+    font-size: 55px;
+  }
+
+  .recentWORKS h2 {
+    font-size: 32px;
+    top: 14px;
+  }
+
+  .work1 img {
+    height: 200px;
+  }
+}
+/* ===== EXTRA SMALL DEVICES (360px & below) ===== */
+@media (max-width: 360px) {
+
+  /* Section breathing space */
+  .fifthpage {
+    padding: 70px 5% 90px;
+    overflow: visible;
+  }
+
+  /* Showcase heading shadow issue fix */
+  .recentWORKS {
+    margin-bottom: 50px;
+    overflow: visible;
+  }
+
+  .recentWORKS h1 {
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .recentWORKS h2 {
+    font-size: 28px;
+    top: 12px;
+  }
+
+  .recentWORKS p {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+
+  /* Grid fix */
+  .myworks {
+    gap: 28px;
+  }
+
+  /* Card shadow visible */
+  .work1 {
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+  }
+
+  /* Image fix */
+  .work1 img {
+    height: 180px;
+    object-fit: cover;
+  }
+
+  /* Content spacing */
+  .work-content {
+    padding: 22px 20px;
+  }
+
+  .work-content h1 {
+    font-size: 20px;
+  }
+
+  .work-content p {
+    font-size: 13.5px;
+  }
+
+  /* Button polish */
+  .work-content button {
+    padding: 13px;
+  }
+}
+

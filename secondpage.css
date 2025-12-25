@@ -1,0 +1,147 @@
+/* Container for second page */
+.secondpage {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 80px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.leftsection {
+  flex: 1 1 300px; 
+}
+
+.leftsection h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.leftsection p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6b7280;
+  max-width: 100%;
+}
+
+.leftsection .leftimg {
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-top: 20px;
+}
+
+/* Right Section */
+.rightsection {
+  flex: 1.2 1 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px 15px;
+}
+
+.workings {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workings:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.workings h4 {
+  font-size: 14px;
+  color: #2563eb;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.workings h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #111827;
+}
+
+.workings p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .secondpage {
+    padding: 60px 8%;
+    gap: 40px;
+  }
+  
+  .leftsection h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .secondpage {
+    flex-direction: column;
+    padding: 50px 5%;
+    gap: 35px;
+  }
+
+  .leftsection h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .leftsection p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .leftsection .leftimg {
+    max-width: 300px;
+    margin: 20px auto 0 auto; 
+  }
+
+  .rightsection {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .secondpage {
+    padding: 40px 3%;
+    gap: 25px;
+  }
+
+  .leftsection h1 {
+    font-size: 24px;
+  }
+
+  .leftsection p {
+    font-size: 14px;
+  }
+
+  .leftsection .leftimg {
+    max-width: 100%;
+    margin: 15px auto 0 auto;
+  }
+
+  .workings h2 {
+    font-size: 16px;
+  }
+
+  .workings p {
+    font-size: 13px;
+  }
+}
